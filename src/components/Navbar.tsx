@@ -76,7 +76,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center py-1 sm:py-2">
             {/* Logo */}
             <Link to="/" className="flex items-center" aria-label="Home" onClick={handleNavClick}>
-              <span className="bg-yellow-200 rounded-lg px-2 sm:px-3 py-1 sm:py-1.5 shadow border border-blue-900 flex flex-col items-center font-extrabold text-blue-900 tracking-widest whitespace-nowrap drop-shadow mr-2 sm:mr-4 lg:mr-8" style={{ letterSpacing: '0.12em', fontFamily: 'serif', minWidth: '140px' }}>
+              <span className="bg-white rounded-lg px-2 sm:px-3 py-1 sm:py-1.5 shadow border border-blue-900 flex flex-col items-center font-extrabold text-blue-900 tracking-widest whitespace-nowrap drop-shadow mr-2 sm:mr-4 lg:mr-8" style={{ letterSpacing: '0.12em', fontFamily: 'serif', minWidth: '140px' }}>
                 <span className="font-extrabold text-xs sm:text-sm lg:text-base tracking-widest text-blue-900" style={{ letterSpacing: '0.08em', fontFamily: 'serif' }}>KALRA Packers Movers</span>
                 <span className="font-bold text-[0.5rem] sm:text-[0.6rem] lg:text-[0.7rem] tracking-widest mt-0.5 px-1 sm:px-2 py-0.5 rounded" style={{ background: '#0a2e73', color: '#fff', letterSpacing: '0.2em', boxShadow: '0 1px 4px rgba(10,46,115,0.10)' }}>SINCE 1992</span>
               </span>

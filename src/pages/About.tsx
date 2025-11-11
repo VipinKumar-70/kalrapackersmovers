@@ -14,6 +14,7 @@ import {
   Heart,
   Star
 } from "lucide-react";
+import cusfeedback from "../assets/happyCustomer.png"
 
 const About = () => {
   const achievements = [
