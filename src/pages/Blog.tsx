@@ -174,7 +174,7 @@ const Blog = () => {
           <div className="grid lg:grid-cols-4 gap-8">
             {/* Sidebar */}
             <motion.div {...fadeInUp} className="lg:col-span-1">
-              <Card className="bg-gradient-section shadow-card mb-8">
+              <Card className="bg-[#f1f2f6] mb-8">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-4 text-foreground">Categories</h3>
                   <div className="space-y-2">
@@ -184,7 +184,7 @@ const Blog = () => {
                         className={`block w-full text-left px-3 py-2 rounded-lg transition-colors ${
                           selectedCategory === category
                             ? "bg-primary text-primary-foreground text-white"
-                            : "text-muted-foreground hover:bg-secondary hover:text-foreground"
+                            : "text-muted-foreground hover:bg-[#ffffff] hover:text-foreground"
                         }`}
                         onClick={() => setSelectedCategory(category)}
                       >
@@ -195,7 +195,7 @@ const Blog = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-gradient-section shadow-card">
+              <Card className="bg-[#f1f2f6]">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-4 text-foreground">Subscribe</h3>
                   <p className="text-muted-foreground mb-4">
@@ -228,7 +228,7 @@ const Blog = () => {
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                     className="mb-12"
                   >
-                    <Card className="bg-gradient-section shadow-card hover:shadow-lg transition-all duration-300 overflow-hidden">
+                    <Card className="bg-[#f1f2f6] hover:shadow-lg transition-all duration-300 overflow-hidden">
                       <CardContent className="p-0">
                         <div className="bg-gradient-primary text-white p-6">
                           <div className="flex items-center space-x-2 mb-3">
@@ -268,7 +268,7 @@ const Blog = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: index * 0.1 }}
                     >
-                      <Card className="h-full bg-gradient-section shadow-card hover:shadow-lg transition-all duration-300 group">
+                      <Card className="h-full bg-[#f1f2f6] hover:shadow-lg transition-all duration-300 group">
                         <CardContent className="p-6">
                           <div className="flex items-center space-x-2 mb-3">
                             <span className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs font-medium">

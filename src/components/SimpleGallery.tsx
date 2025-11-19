@@ -1,8 +1,8 @@
-﻿import React, { useState, useEffect, useCallback } from 'react';
-import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { ExternalLink, Loader2, ChevronLeft, ChevronRight } from 'lucide-react';
-import { isValidGooglePhotosUrl } from '@/lib/googlePhotos';
+﻿import React, { useState, useEffect, useCallback } from "react";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { ExternalLink, Loader2, ChevronLeft, ChevronRight } from "lucide-react";
+import { isValidGooglePhotosUrl } from "@/lib/googlePhotos";
 
 interface SimpleGalleryProps {
   googlePhotosUrl?: string;
@@ -19,7 +19,7 @@ interface ImageData {
 const SimpleGallery: React.FC<SimpleGalleryProps> = ({
   googlePhotosUrl,
   staticImages = [],
-  className = ''
+  className = "",
 }) => {
   const [images, setImages] = useState<ImageData[]>([]);
   const [error, setError] = useState<string | null>(null);
@@ -42,7 +42,9 @@ const SimpleGallery: React.FC<SimpleGalleryProps> = ({
   }, [images.length]);
 
   const goToPrev = useCallback(() => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
   }, [images.length]);
 
   const goToSlide = useCallback((index: number) => {
@@ -56,11 +58,31 @@ const SimpleGallery: React.FC<SimpleGalleryProps> = ({
 
         // Always start with our fallback images for the collage
         const fallbackImages = [
-          { url: '/assets/20200707_193326.jpg', alt: 'Office Relocation Services', id: 'fallback-1' },
-          { url: '/assets/IMG-20170624-WA0005.jpg', alt: 'Residential Moving Services', id: 'fallback-2' },
-          { url: '/assets/20191101_132855.jpg', alt: 'Professional Moving Truck', id: 'fallback-3' },
-          { url: '/assets/20191101_140129.jpg', alt: 'Manufacturing & Industrial Moving', id: 'fallback-4' },
-          { url: '/assets/Gello.jpg', alt: 'Happy Customers', id: 'fallback-5' },
+          {
+            url: "/assets/20200707_193326.jpg",
+            alt: "Office Relocation Services",
+            id: "fallback-1",
+          },
+          {
+            url: "/assets/IMG-20170624-WA0005.jpg",
+            alt: "Residential Moving Services",
+            id: "fallback-2",
+          },
+          {
+            url: "/assets/20191101_132855.jpg",
+            alt: "Professional Moving Truck",
+            id: "fallback-3",
+          },
+          {
+            url: "/assets/20191101_140129.jpg",
+            alt: "Manufacturing & Industrial Moving",
+            id: "fallback-4",
+          },
+          {
+            url: "/assets/Gello.jpg",
+            alt: "Happy Customers",
+            id: "fallback-5",
+          },
         ];
 
         // If static images are provided, use them to replace some fallback images
@@ -68,11 +90,14 @@ const SimpleGallery: React.FC<SimpleGalleryProps> = ({
           const staticImageData = staticImages.map((url, index) => ({
             url,
             alt: `Featured Service ${index + 1}`,
-            id: `static-${index}`
+            id: `static-${index}`,
           }));
-          
+
           // Replace the first few fallback images with static images
-          imagesToShow = [...staticImageData, ...fallbackImages.slice(staticImages.length)];
+          imagesToShow = [
+            ...staticImageData,
+            ...fallbackImages.slice(staticImages.length),
+          ];
         } else {
           // Use all fallback images
           imagesToShow = fallbackImages;
@@ -81,11 +106,11 @@ const SimpleGallery: React.FC<SimpleGalleryProps> = ({
         setImages(imagesToShow.slice(0, 5));
 
         if (googlePhotosUrl && isValidGooglePhotosUrl(googlePhotosUrl)) {
-          setError('google-photos-restricted');
+          setError("google-photos-restricted");
         }
       } catch (err) {
-        console.error('Error loading gallery images:', err);
-        setError('Failed to load gallery images');
+        console.error("Error loading gallery images:", err);
+        setError("Failed to load gallery images");
       }
     };
 
@@ -107,14 +132,26 @@ const SimpleGallery: React.FC<SimpleGalleryProps> = ({
     <section className={`py-12 sm:py-16 lg:py-20 bg-white ${className}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Our Services Gallery</h2>
-          <p className="text-lg text-gray-600 mb-6">Showcasing our professional moving and packing services</p>
-          
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+            Our Services Gallery
+          </h2>
+          <p className="text-lg text-gray-600 mb-6">
+            Showcasing our professional moving and packing services
+          </p>
+
           {error && (
             <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
               <p className="text-blue-700 text-sm">
-                <span className="font-medium">Note:</span> Due to security restrictions, we're showing our curated gallery images.
-                <a href={googlePhotosUrl} target="_blank" rel="noopener noreferrer" className="underline ml-1">View all</a>
+                <span className="font-medium">Note:</span> Due to security
+                restrictions, we're showing our curated gallery images.
+                <a
+                  href={googlePhotosUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline ml-1"
+                >
+                  View all
+                </a>
               </p>
             </div>
           )}
@@ -123,13 +160,13 @@ const SimpleGallery: React.FC<SimpleGalleryProps> = ({
         {/* Carousel Layout */}
         <div className="max-w-4xl mx-auto">
           {/* Main carousel container */}
-          <div 
+          <div
             className="relative overflow-hidden rounded-2xl shadow-2xl group"
             onMouseEnter={() => setIsAutoPlaying(false)}
             onMouseLeave={() => setIsAutoPlaying(true)}
           >
             {/* Images container */}
-            <div 
+            <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
@@ -142,7 +179,7 @@ const SimpleGallery: React.FC<SimpleGalleryProps> = ({
                       className="w-full h-full object-cover"
                       loading="lazy"
                       onError={(e) => {
-                        (e.currentTarget.src = '/assets/placeholder.svg');
+                        e.currentTarget.src = "/assets/placeholder.svg";
                       }}
                     />
                   </div>
@@ -175,8 +212,8 @@ const SimpleGallery: React.FC<SimpleGalleryProps> = ({
                 onClick={() => goToSlide(idx)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   idx === currentIndex
-                    ? 'bg-blue-600 scale-125'
-                    : 'bg-gray-300 hover:bg-gray-400'
+                    ? "bg-blue-600 scale-125"
+                    : "bg-gray-300 hover:bg-gray-400"
                 }`}
                 aria-label={`Go to slide ${idx + 1}`}
               />
@@ -203,9 +240,13 @@ const SimpleGallery: React.FC<SimpleGalleryProps> = ({
               variant="outline"
               size="lg"
               asChild
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-200 to-yellow-300 text-gray-800 border-yellow-300 hover:from-yellow-300 hover:to-yellow-400 hover:text-gray-900 shadow-lg hover:shadow-xl transition-all duration-300"
+              className="inline-flex items-center gap-2 px-6 py-3  text-primary hover:bg-primary-glow bg-[#f1f2f6]  hover:from-yellow-300 hover:to-yellow-400 hover:text-white shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <a href={googlePhotosUrl} target="_blank" rel="noopener noreferrer">
+              <a
+                href={googlePhotosUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ExternalLink className="h-5 w-5" />
                 View Complete Gallery
               </a>

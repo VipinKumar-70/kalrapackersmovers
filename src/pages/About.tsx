@@ -112,7 +112,7 @@ const About = () => {
               {...fadeInUp}
               className="relative order-1 lg:order-2"
             >
-              <div className="bg-gradient-section rounded-2xl p-4 sm:p-6 lg:p-8 shadow-card">
+              <div className="bg-yellow-200 rounded-2xl p-4 sm:p-6 lg:p-8 shadow-card">
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-6 text-foreground">Why Choose Us?</h3>
                 <ul className="space-y-3 sm:space-y-4">
                   <li className="flex items-start space-x-3">
@@ -207,7 +207,7 @@ const About = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <Card className="h-full bg-gradient-section hover:shadow-card transition-all duration-300 text-center">
+                <Card className="h-full bg-[#f1f2f6] hover:shadow-card transition-all duration-300 text-center">
                   <CardContent className="p-4 sm:p-6">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-3 sm:mb-4">
                       <value.icon className="h-5 w-5 sm:h-6 sm:w-6 text-white" />

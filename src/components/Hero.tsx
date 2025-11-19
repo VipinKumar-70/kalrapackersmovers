@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
-  Phone,
   ArrowRight,
   Package,
   Clock,
@@ -10,11 +9,13 @@ import {
   Shield,
   Headphones,
   Star,
-  X,
 } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import { emailjsConfig } from "@/lib/emailjs";
-import packers from "../assets/packers2.png"
+import welcome from "../assets/Welcome-cuate.png";
+import hello from "../assets/Hello-rafiki.png";
+import packers from "../assets/packers2.png";
+import herobg from "../assets/deliverytruck.jpg";
 
 // Fixed Google Reviews
 const GOOGLE_REVIEWS = [
@@ -84,7 +85,6 @@ const GOOGLE_REVIEWS = [
 ];
 
 const Hero = () => {
-  const [showPopup, setShowPopup] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const formRef = useRef<HTMLFormElement>(null);
   const [sending, setSending] = useState(false);
@@ -100,14 +100,6 @@ const Hero = () => {
       });
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
-
-  // Show popup after 800ms
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowPopup(true);
-    }, 800);
-    return () => clearTimeout(timer);
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -127,7 +119,6 @@ const Hero = () => {
       if (result.status === 200) {
         setSent(true);
         formRef.current?.reset();
-        setTimeout(() => setShowPopup(false), 2000);
       } else {
         setError("Failed to send. Please try again.");
       }
@@ -139,19 +130,10 @@ const Hero = () => {
     }
   };
 
-  const features = [
-    { icon: <Package className="w-5 h-5" />, text: "30+ Years Experience" },
-    { icon: <Truck className="w-5 h-5" />, text: "15000+ successfully moved orders" },
-    { icon: <Star className="w-5 h-5" />, text: "GPS enabled vehicle" },
-    { icon: <Shield className="w-5 h-5" />, text: "Reasonable rate" },
-    { icon: <Clock className="w-5 h-5" />, text: "Best Services" },
-    { icon: <Headphones className="w-5 h-5" />, text: "24/7 Support" },
-  ];
-
-  const ReviewCard = ({ review }: { review: typeof GOOGLE_REVIEWS[0] }) => (
+  const ReviewCard = ({ review }: { review: (typeof GOOGLE_REVIEWS)[0] }) => (
     <motion.div
       whileHover={{ y: -4 }}
-      className="bg-white rounded-2xl p-5 sm:p-6 shadow-md border border-gray-100 h-full flex flex-col"
+      className="bg-[#f1f2f6] rounded-2xl p-5 sm:p-6 shadow-md border border-gray-100 h-full flex flex-col"
     >
       <div className="flex items-start gap-3 mb-4">
         <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-sm">
@@ -172,7 +154,9 @@ const Hero = () => {
           <Star
             key={i}
             className={`w-4 h-4 ${
-              i < review.rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
+              i < review.rating
+                ? "fill-yellow-400 text-yellow-400"
+                : "text-gray-300"
             }`}
           />
         ))}
@@ -188,103 +172,137 @@ const Hero = () => {
 
   return (
     <>
-      {/* === HERO SECTION (Improved Layout) === */}
-      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-indigo-50 overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0 bg-grid-gray-200"></div>
-        </div>
+      {/* === HERO SECTION === */}
+      <section className="relative flex items-center justify-center text-center py-24 px-6 bg-gradient-to-b from-yellow-50 via-white to-gray-50">
+        <div
+          className="absolute inset-0 z-0 bg-center bg-cover"
+          style={{ backgroundImage: `url(${herobg})` }}
+        ></div>
+        <div className="absolute inset-0 z-10 bg-black/35"></div>
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center py-12 lg:py-20">
-            {/* LEFT: Content + CTA */}
-            <motion.div
-              initial={{ opacity: 0, x: -80 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9, ease: "easeOut" }}
-              className="lg:col-span-5 space-y-8 text-center lg:text-left"
-            >
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2, duration: 0.7 }}
-                className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-gray-900"
+        <div className="relative z-20 max-w-6xl w-full grid md:grid-cols-2 gap-8 items-center">
+          {/* LEFT TEXT */}
+          <div className="text-left px-4">
+            <div className="inline-flex items-center gap-3 bg-black/80 text-white rounded-full px-3 py-1 text-sm font-medium">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5z" />
+              </svg>
+              Trusted Since 1993
+            </div>
+
+            <h1 className="mt-6 text-3xl md:text-[44px] font-extrabold leading-tight text-white ">
+              Move with Confidence — Kalra Packers Movers
+            </h1>
+            <p className="mt-4 text-yellow-100 text-lg">
+              30+ years • 15,000+ successful moves • 4.9★ on Google. We handle
+              home & office shifts with care, speed and transparent pricing.
+            </p>
+
+            <div className="mt-6 flex gap-4 flex-wrap">
+              <a
+                href="#quote"
+                className="bg-black text-yellow-400 px-6 py-3 rounded-2xl font-semibold shadow-lg hover:opacity-95"
               >
-                Professional
-                <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-                  Moving Services
-                </span>
-              </motion.h1>
-
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4, duration: 0.7 }}
-                className="mt-4 text-lg text-gray-600 max-w-xl mx-auto lg:mx-0"
+                Get Free Quote
+              </a>
+              <a
+                href="tel:+91XXXXXXXXXX"
+                className="border-2 border-white text-white px-6 py-3 rounded-2xl font-semibold"
               >
-                Stress-free relocations with insured trucks, real-time tracking, and a dedicated support team.
-              </motion.p>
+                Call Now
+              </a>
+            </div>
 
-              {/* CTA Buttons */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6, duration: 0.7 }}
-                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-6"
-              >
-                {/* <Button
-                  onClick={() => setShowPopup(true)}
-                  className="inline-flex items-center justify-center px-6 py-3.5 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
-                >
-                  Get a Free Quote
-                </Button>
-                <a
-                  href="tel:+18001234567"
-                  className="inline-flex items-center justify-center px-6 py-3.5 text-base font-semibold text-indigo-700 bg-white border-2 border-indigo-200 rounded-xl hover:bg-indigo-50 transition-colors"
-                >
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call Now
-                </a> */}
-              </motion.div>
-
-              {/* Features Grid */}
-              <motion.ul
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8, duration: 0.8 }}
-                className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-xl mx-auto lg:mx-0"
-              >
-                {features.map((item, idx) => (
-                  <motion.li
-                    key={idx}
-                    initial={{ opacity: 0, x: -30 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.9 + idx * 0.07, duration: 0.5 }}
-                    className="flex items-center gap-2.5 bg-white/80 backdrop-blur-sm rounded-lg p-3 shadow-sm border border-gray-100"
-                  >
-                    <div className="text-indigo-600 flex-shrink-0">{item.icon}</div>
-                    <span className="text-sm font-medium text-gray-800">{item.text}</span>
-                  </motion.li>
-                ))}
-              </motion.ul>
-            </motion.div>
-
-            {/* RIGHT: Illustration */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9, x: 80 }}
-              animate={{ opacity: 1, scale: 1, x: 0 }}
-              transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
-              className="lg:col-span-7 flex justify-center lg:justify-end"
-            >
-              <div className="relative">
-                <div className="absolute -inset-6 bg-indigo-200 rounded-full blur-3xl opacity-30 -z-10 animate-pulse"></div>
-                <img
-                  src={packers}
-                  alt="Packers & Movers – truck, boxes, happy family"
-                  className="w-full max-w-md lg:max-w-xl xl:max-w-2xl drop-shadow-2xl"
-                />
+            <div className="mt-6 grid grid-cols-3 gap-4 max-w-sm text-white">
+              <div className="text-left">
+                <div className="text-2xl font-bold">30+</div>
+                <div className="text-xs text-yellow-200">Years</div>
               </div>
-            </motion.div>
+              <div className="text-left">
+                <div className="text-2xl font-bold">15K+</div>
+                <div className="text-xs text-yellow-200">Moves</div>
+              </div>
+              <div className="text-left">
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl font-bold">4.9★</span>
+                </div>
+                <div className="text-xs text-yellow-200">Google Rating</div>
+              </div>
+            </div>
+          </div>
+
+          {/* === QUOTE FORM === */}
+          <div className="px-4 py-5" id="quote">
+            <div className="rounded-2xl shadow-2xl overflow-hidden bg-white">
+              <div
+                className="w-full aspect-[16/9] bg-center bg-cover"
+                style={{
+                  backgroundImage: `url(${packers})`,
+                }}
+                role="img"
+                aria-label="Kalra staff providing a survey and quote"
+              ></div>
+              <div className="p-6">
+                <h3 className="font-bold text-lg mb-2">Instant Quote</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Tell us your move details and get a guaranteed, transparent
+                  quote — no hidden fees.
+                </p>
+
+                {/* === FORM START === */}
+                <form
+                  ref={formRef}
+                  onSubmit={handleSubmit}
+                  className="grid gap-3"
+                >
+                  <input
+                    name="user_name"
+                    type="text"
+                    placeholder="Your name"
+                    className="border rounded px-3 py-2"
+                    required
+                  />
+                  <input
+                    name="user_phone"
+                    type="tel"
+                    placeholder="Phone number"
+                    className="border rounded px-3 py-2"
+                    required
+                  />
+
+                  <Button
+                    type="submit"
+                    disabled={sending}
+                    className="bg-yellow-500 text-black px-4 py-2 rounded font-semibold hover:bg-yellow-400 transition-all"
+                  >
+                    {sending ? "Sending..." : "Request Quote"}
+                  </Button>
+
+                  {sent && (
+                    <p className="text-green-600 text-sm mt-2">
+                      ✅ Message sent successfully!
+                    </p>
+                  )}
+                  {error && (
+                    <p className="text-red-600 text-sm mt-2">❌ {error}</p>
+                  )}
+                </form>
+                {/* === FORM END === */}
+              </div>
+            </div>
+
+            <div className="mt-4 grid grid-cols-2 gap-3">
+              <div
+                className="w-full h-28 bg-center bg-cover rounded"
+                style={{ backgroundImage: "url('/assets/packing.jpg')" }}
+                aria-label="Professional packing by Kalra team"
+              ></div>
+              <div
+                className="w-full h-28 bg-center bg-cover rounded"
+                style={{ backgroundImage: "url('/assets/truck-loading.jpg')" }}
+                aria-label="Branded truck being loaded"
+              ></div>
+            </div>
           </div>
         </div>
       </section>
@@ -305,20 +323,28 @@ const Hero = () => {
                 alt="Google"
                 className="w-6 h-6"
               />
-              <span className="text-xl sm:text-2xl font-bold text-gray-900">Google Reviews</span>
+              <span className="text-xl sm:text-2xl font-bold text-gray-900">
+                Google Reviews
+              </span>
             </div>
             <div className="flex items-center justify-center gap-2">
               <div className="flex">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  <Star
+                    key={i}
+                    className="w-5 h-5 fill-yellow-400 text-yellow-400"
+                  />
                 ))}
               </div>
-              <span className="text-2xl sm:text-3xl font-bold text-gray-900">4.9</span>
-              <span className="text-sm sm:text-base text-gray-600">(reviews)</span>
+              <span className="text-2xl sm:text-3xl font-bold text-gray-900">
+                4.9
+              </span>
+              <span className="text-sm sm:text-base text-gray-600">
+                (reviews)
+              </span>
             </div>
           </motion.div>
 
-          {/* Slider */}
           <div className="relative max-w-7xl mx-auto">
             <div className="overflow-hidden">
               <motion.div
@@ -336,7 +362,9 @@ const Hero = () => {
 
             {/* Dots */}
             <div className="flex justify-center gap-2 mt-8">
-              {Array.from({ length: Math.ceil(GOOGLE_REVIEWS.length / 3) }).map((_, idx) => (
+              {Array.from({
+                length: Math.ceil(GOOGLE_REVIEWS.length / 3),
+              }).map((_, idx) => (
                 <button
                   key={idx}
                   onClick={() => setCurrentSlide(idx * 3)}
@@ -364,76 +392,6 @@ const Hero = () => {
           </div>
         </div>
       </section>
-
-      {/* === POPUP CONTACT FORM === */}
-      {showPopup && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
-          onClick={() => setShowPopup(false)}
-        >
-          <motion.div
-            initial={{ scale: 0.8, y: 50 }}
-            animate={{ scale: 1, y: 0 }}
-            exit={{ scale: 0.8, y: 50 }}
-            transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6 sm:p-8 relative"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setShowPopup(false)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition"
-            >
-              <X className="w-6 h-6" />
-            </button>
-
-            <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2 text-center">
-              Get a Free Moving Quote!
-            </h3>
-            <p className="text-sm text-gray-600 text-center mb-6">
-              Fill in your details and we'll call you back in 5 minutes.
-            </p>
-
-            <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
-              <input
-                name="user_name"
-                type="text"
-                placeholder="Your Name"
-                required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-sm"
-              />
-              <input
-                name="user_phone"
-                type="tel"
-                pattern="[0-9]{10}"
-                required
-                placeholder="Your Phone Number"
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-sm"
-              />
-              <Button
-                type="submit"
-                disabled={sending}
-                className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 disabled:opacity-60"
-              >
-                {sending ? "Sending..." : "Request Callback"}
-              </Button>
-
-              {sent && (
-                <p className="text-green-600 text-center font-medium text-sm">
-                  Sent! We'll call you soon.
-                </p>
-              )}
-              {error && <p className="text-red-600 text-center text-sm">{error}</p>}
-            </form>
-
-            <p className="text-xs text-gray-500 text-center mt-4">
-              Rated <span className="font-bold text-yellow-500">4.9</span> by happy customers
-            </p>
-          </motion.div>
-        </motion.div>
-      )}
     </>
   );
 };

@@ -96,7 +96,7 @@ const TrainedTeam = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
               >
-                <Card className="h-full bg-gradient-section hover:shadow-card transition-all duration-300">
+                <Card className="h-full bg-[#f1f2f6] hover:shadow-card transition-all duration-300">
                   <CardContent className="p-6 text-center">
                     <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                       <feature.icon className="h-8 w-8 text-white" />
@@ -116,7 +116,7 @@ const TrainedTeam = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gradient-section">
+      <section className="py-20 bg-[#f1f2f6]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div {...fadeInUp}>

@@ -99,10 +99,10 @@ const Services = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <Card className="h-full bg-gradient-section hover:shadow-card transition-all duration-300 group overflow-hidden">
+                <Card className="h-full bg-[#f1f2f6] hover:shadow-card transition-all duration-300 group overflow-hidden">
                   <CardContent className="p-0">
                     {/* Header with gradient */}
-                    <div className={`bg-gradient-to-r ${service.color} p-6 text-white`}>
+                    <div className={`bg-[#2567a1] p-6 text-white`}>
                       <div className="w-12 h-12 bg-yellow-200/20 rounded-lg flex items-center justify-center mb-4">
                         <service.icon className="h-6 w-6" />
                       </div>
@@ -144,7 +144,7 @@ const Services = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-yellow-200">
+      <section className="py-20 bg-[#f1f2f6]">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInUp} className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-foreground">Our Process</h2>

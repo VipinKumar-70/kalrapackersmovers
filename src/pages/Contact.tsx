@@ -99,7 +99,7 @@ const Contact = () => {
               className="space-y-6 sm:space-y-8 order-2 lg:order-1"
             >
               {/* Why Choose Us */}
-              <Card className="bg-gradient-section shadow-card">
+              <Card className="bg-[#f1f2f6]">
                 <CardContent className="p-4 sm:p-6">
                   <h3 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6 text-foreground">Why Us?</h3>
                   <div className="space-y-3 sm:space-y-4">
@@ -186,7 +186,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button className="w-full bg-yellow-200 text-blue-600 hover:text-white hover:shadow-button group pt-0 py-3 sm:py-4 text-base sm:text-lg font-semibold touch-manipulation" size="lg" type="submit" disabled={sending}>
+                <Button className="w-full bg-primary-glow text-white hover:text-white hover:shadow-button group pt-0 py-3 sm:py-4 text-base sm:text-lg font-semibold touch-manipulation" size="lg" type="submit" disabled={sending}>
                   <Send className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                   {sending ? "Sending..." : "Send Message"}
                 </Button>
@@ -204,7 +204,7 @@ const Contact = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}>
-                <Card className="h-full bg-gradient-section hover:shadow-card transition-all duration-300 overflow-hidden">
+                <Card className="h-full bg-[#f1f2f6] hover:shadow-card transition-all duration-300 overflow-hidden">
                   <CardContent className="p-0">
                     <div className={`bg-gradient-to-r ${info.color} p-4 sm:p-6 text-white`}>
                       <div className="w-10 h-10 sm:w-12 sm:h-12 bg-yellow-200/20 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
@@ -229,7 +229,7 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-section">
+      <section className="py-12 sm:py-16 lg:py-20 bg-[]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeInUp} className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">Visit Our Office</h2>

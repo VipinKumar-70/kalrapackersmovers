@@ -9,13 +9,13 @@
 
 export const emailjsConfig = {
   // Your EmailJS Service ID (e.g., 'service_xxxxxxx')
-  serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID || "service_x7x8eoi",
+  serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID || "service_6a3v57n",
   
   // Your EmailJS Template ID (e.g., 'template_xxxxxxx')
-  templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "template_6ixa1vr",
+  templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "template_ctl2ltb",
   
   // Your EmailJS Public Key (User ID)
-  publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "MMQt4x2BmjQgdMDOD",
+  publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "V8GhOKI5mvbnni1gC",
 };
 
 // Email template variables that should be included in your EmailJS template:
