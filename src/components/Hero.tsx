@@ -187,7 +187,7 @@ const Hero = () => {
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2L3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5z" />
               </svg>
-              Trusted Since 1993
+              Trusted Since 1992
             </div>
 
             <h1 className="mt-6 text-3xl md:text-[44px] font-extrabold leading-tight text-white ">
