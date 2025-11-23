@@ -194,8 +194,9 @@ const Hero = () => {
               Move with Confidence — Kalra Packers Movers
             </h1>
             <p className="mt-4 text-yellow-100 text-lg">
-              30+ years • 15,000+ successful moves • 4.9★ on Google. We handle
-              home & office shifts with care, speed and transparent pricing.
+              Reliable & Trust worthy partner in your move. <br />
+              We understand that moving is more than just shifting goods — it’s
+              about relocating your memories, emotions, and trust.
             </p>
 
             <div className="mt-6 flex gap-4 flex-wrap">
