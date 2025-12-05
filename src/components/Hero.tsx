@@ -16,6 +16,7 @@ import welcome from "../assets/Welcome-cuate.png";
 import hello from "../assets/Hello-rafiki.png";
 import packers from "../assets/packers2.png";
 import herobg from "../assets/deliverytruck.jpg";
+import { Link } from "react-router-dom";
 
 // Fixed Google Reviews
 const GOOGLE_REVIEWS = [
@@ -200,12 +201,12 @@ const Hero = () => {
             </p>
 
             <div className="mt-6 flex gap-4 flex-wrap">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="bg-red-600 text-white px-6 py-3 rounded-2xl font-semibold shadow-lg hover:opacity-95"
               >
                 Get Free Quote
-              </a>
+              </Link>
               <a
                 href="tel:+919213995592"
                 className="border-2 border-white text-white px-6 py-3 rounded-2xl font-semibold"
