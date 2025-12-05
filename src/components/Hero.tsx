@@ -193,21 +193,21 @@ const Hero = () => {
             <h1 className="mt-6 text-3xl md:text-[44px] font-extrabold leading-tight text-white ">
               Move with Confidence — Kalra Packers Movers
             </h1>
-            <p className="mt-4 text-yellow-100 text-lg">
+            <p className="mt-4 text-white text-lg">
               Reliable & Trust worthy partner in your move. <br />
               We understand that moving is more than just shifting goods — it’s
-              about relocating your memories, emotions, and trust.
+              about relocating your memories, emotions, and trust.
             </p>
 
             <div className="mt-6 flex gap-4 flex-wrap">
               <a
-                href="#quote"
-                className="bg-black text-yellow-400 px-6 py-3 rounded-2xl font-semibold shadow-lg hover:opacity-95"
+                href="/contact"
+                className="bg-red-600 text-white px-6 py-3 rounded-2xl font-semibold shadow-lg hover:opacity-95"
               >
                 Get Free Quote
               </a>
               <a
-                href="tel:+91XXXXXXXXXX"
+                href="tel:+919213995592"
                 className="border-2 border-white text-white px-6 py-3 rounded-2xl font-semibold"
               >
                 Call Now
@@ -274,7 +274,7 @@ const Hero = () => {
                   <Button
                     type="submit"
                     disabled={sending}
-                    className="bg-yellow-500 text-black px-4 py-2 rounded font-semibold hover:bg-yellow-400 transition-all"
+                    className="bg-red-600 text-white px-4 py-2 rounded font-semibold hover:bg-red-800 transition-all"
                   >
                     {sending ? "Sending..." : "Request Quote"}
                   </Button>
