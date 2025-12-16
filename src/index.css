@@ -5,7 +5,8 @@
 /* Critical CSS - Inlined for better performance */
 @layer base {
   :root {
-    --background: 0 0% 100%; /* white */
+    --background: 0 0% 100%;
+    /* white */
     --foreground: 222.2 84% 4.9%;
 
     --card: 48 96% 53%;
@@ -147,6 +148,7 @@
 
   /* Reduce motion for users who prefer it */
   @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
@@ -159,6 +161,7 @@
 
   /* Print styles */
   @media print {
+
     *,
     *::before,
     *::after {
@@ -207,8 +210,31 @@
     0% {
       background-position: 200% 0;
     }
+
     100% {
       background-position: -200% 0;
     }
   }
+}
+
+
+.phone-input {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.phone-input input {
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.phone-input:focus-within {
+  border-color: #6366f1;
+  /* primary */
+  box-shadow: 0 0 0 1px #6366f1;
 }

@@ -7,6 +7,7 @@ import { Loader2 } from "lucide-react";
 const Home = lazy(() => import("@/pages/Home").catch(() => ({ default: () => <div>Error loading Home</div> })));
 const About = lazy(() => import("@/pages/About").catch(() => ({ default: () => <div>Error loading About</div> })));
 const Contact = lazy(() => import("@/pages/Contact").catch(() => ({ default: () => <div>Error loading Contact</div> })));
+const NewGallery = lazy(() => import("@/pages/NewGallery").catch(() => ({ default: () => <div>Error loading NewGallery</div> })));
 const Blog = lazy(() => import("@/pages/Blog").catch(() => ({ default: () => <div>Error loading Blog</div> })));
 const BlogPost = lazy(() => import("@/pages/BlogPost").catch(() => ({ default: () => <div>Error loading BlogPost</div> })));
 const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy").catch(() => ({ default: () => <div>Error loading Privacy Policy</div> })));
@@ -38,6 +39,7 @@ const AppRoutes = () => {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="NewGallery" element={<NewGallery />} />
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:id" element={<BlogPost />} />
           <Route path="privacy" element={<PrivacyPolicy />} />

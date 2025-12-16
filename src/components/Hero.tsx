@@ -179,7 +179,7 @@ const Hero = () => {
           className="absolute inset-0 z-0 bg-center bg-cover"
           style={{ backgroundImage: `url(${herobg})` }}
         ></div>
-        <div className="absolute inset-0 z-10 bg-black/35"></div>
+        {/* <div className="absolute inset-0 z-10 bg-black/35"></div> */}
 
         <div className="relative z-20 max-w-6xl w-full grid md:grid-cols-2 gap-8 items-center">
           {/* LEFT TEXT */}
@@ -189,6 +189,23 @@ const Hero = () => {
                 <path d="M12 2L3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5z" />
               </svg>
               Trusted Since 1992
+            </div>
+
+            <div className="mt-6 grid grid-cols-3 gap-4 max-w-sm text-white">
+              <div className="text-left">
+                <div className="text-2xl font-bold">30+</div>
+                <div className="text-xs text-yellow-200">Years</div>
+              </div>
+              <div className="text-left">
+                <div className="text-2xl font-bold">15K+</div>
+                <div className="text-xs text-yellow-200">Moves</div>
+              </div>
+              <div className="text-left">
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl font-bold">4.9★</span>
+                </div>
+                <div className="text-xs text-yellow-200">Google Rating</div>
+              </div>
             </div>
 
             <h1 className="mt-6 text-3xl md:text-[44px] font-extrabold leading-tight text-white ">
@@ -213,23 +230,6 @@ const Hero = () => {
               >
                 Call Now
               </a>
-            </div>
-
-            <div className="mt-6 grid grid-cols-3 gap-4 max-w-sm text-white">
-              <div className="text-left">
-                <div className="text-2xl font-bold">30+</div>
-                <div className="text-xs text-yellow-200">Years</div>
-              </div>
-              <div className="text-left">
-                <div className="text-2xl font-bold">15K+</div>
-                <div className="text-xs text-yellow-200">Moves</div>
-              </div>
-              <div className="text-left">
-                <div className="flex items-center gap-2">
-                  <span className="text-2xl font-bold">4.9★</span>
-                </div>
-                <div className="text-xs text-yellow-200">Google Rating</div>
-              </div>
             </div>
           </div>
 
@@ -277,7 +277,7 @@ const Hero = () => {
                     disabled={sending}
                     className="bg-red-600 text-white px-4 py-2 rounded font-semibold hover:bg-red-800 transition-all"
                   >
-                    {sending ? "Sending..." : "Request Quote"}
+                    {sending ? "Sending..." : "Request Callback"}
                   </Button>
 
                   {sent && (
