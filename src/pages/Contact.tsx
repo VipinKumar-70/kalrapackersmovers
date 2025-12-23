@@ -44,7 +44,7 @@ const Contact = () => {
       icon: MapPin,
       title: "Address",
       details: [
-        "474, Plot, Block-C, Sector 6 Dwarka, Dwarka, New Delhi, Delhi, 110075",
+        "474, Plot - 14, Block-C, Sector 6 Dwarka, Dwarka, New Delhi, Delhi, 110075",
       ],
       color: "from-green-500 to-green-600",
     },
@@ -89,7 +89,7 @@ const Contact = () => {
 
       {/* Contact Info Cards */}
       <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container mx-auto mt-12 sm:mt-16 lg:mt-24 mb-0 pb-0 px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto mt-12 sm:mt-16 lg:mt-2 mb-0 pb-0 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-16">
             {contactInfo.map((info, index) => (
               <motion.div
@@ -293,7 +293,7 @@ const Contact = () => {
               </div>
               <div className="p-4 sm:p-6 lg:p-8 text-center bg-white rounded-b-2xl w-full">
                 <div className="text-sm sm:text-base lg:text-lg font-semibold text-foreground leading-relaxed">
-                  <strong>Address:</strong> 474, Plot, Block-C, Sector 6 Dwarka,
+                  <strong>Address:</strong> 474, Plot - 14, Block-C, Sector 6 Dwarka,
                   Dwarka, New Delhi, Delhi, 110075
                 </div>
               </div>

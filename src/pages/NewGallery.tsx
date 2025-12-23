@@ -17,6 +17,21 @@ const images: string[] = [
   "/images/img7.jpg",
   "/images/img8.jpg",
   "/images/img9.jpg",
+  "/images/img10.jpg",
+  "/images/img11.jpg",
+  "/images/img12.jpg",
+  "/images/img13.jpg",
+  "/images/img14.jpg",
+  "/images/img15.jpg",
+  "/images/img16.jpg",
+  "/images/img17.jpg",
+  "/images/img18.jpg",
+  "/images/img19.jpg",
+  "/images/img20.jpg",
+  "/images/img21.jpg",
+  "/images/img22.jpg",
+  "/images/img23.jpg",
+  "/images/img24.jpg",
 ];
 
 const NewGallery = () => {

@@ -225,7 +225,7 @@ const Footer = () => {
                   className="text-primary-glow mt-0.5 flex-shrink-0"
                 />
                 <p className="text-muted text-sm leading-relaxed">
-                  Address :- 474, Plot - 40, Block-C, Sector 6 Dwarka, Dwarka,
+                  Address :- 474, Plot - 14, Block-C, Sector 6 Dwarka, Dwarka,
                   New Delhi, Delhi, 110075
                 </p>
               </div>

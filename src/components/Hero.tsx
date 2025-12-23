@@ -181,17 +181,10 @@ const Hero = () => {
         ></div>
         {/* <div className="absolute inset-0 z-10 bg-black/35"></div> */}
 
-        <div className="relative z-20 max-w-6xl w-full grid md:grid-cols-2 gap-8 items-center">
+        <div className="relative z-20 max-w-6xl w-full grid md:grid-cols-2 gap-8 items-start lg:pt-10">
           {/* LEFT TEXT */}
-          <div className="text-left px-4">
-            <div className="inline-flex items-center gap-3 bg-black/80 text-white rounded-full px-3 py-1 text-sm font-medium">
-              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5z" />
-              </svg>
-              Trusted Since 1992
-            </div>
-
-            <div className="mt-6 grid grid-cols-3 gap-4 max-w-sm text-white">
+          <div className="text-left px-4 lg:mt-16">
+            <div className="mt-6 grid grid-cols-3 gap-4 max-w-sm mb-4 text-white">
               <div className="text-left">
                 <div className="text-2xl font-bold">30+</div>
                 <div className="text-xs text-yellow-200">Years</div>
@@ -207,6 +200,15 @@ const Hero = () => {
                 <div className="text-xs text-yellow-200">Google Rating</div>
               </div>
             </div>
+
+            <div className="inline-flex items-center gap-3 bg-black/80 text-white rounded-full px-3 py-1 text-sm font-medium">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5z" />
+              </svg>
+              Trusted Since 1992
+            </div>
+
+            
 
             <h1 className="mt-6 text-3xl md:text-[44px] font-extrabold leading-tight text-white ">
               Move with Confidence — Kalra Packers Movers

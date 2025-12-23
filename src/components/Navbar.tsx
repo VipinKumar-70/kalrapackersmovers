@@ -81,7 +81,11 @@ const Navbar = () => {
           </div>
           {/* Contact Info - both numbers */}
           <div className="flex items-center space-x-4 sm:space-x-6">
-            <div className="flex items-center space-x-1 sm:space-x-2">
+            {/* Phone 1 */}
+            <a
+              href="tel:+917292010102"
+              className="flex items-center space-x-1 sm:space-x-2 hover:opacity-80 transition"
+            >
               <Phone
                 size={14}
                 className="text-white sm:w-4 sm:h-4 flex-shrink-0"
@@ -89,8 +93,13 @@ const Navbar = () => {
               <span className="text-white font-semibold text-xs sm:text-sm lg:text-base whitespace-nowrap">
                 +91 - 72 92 01 01 02
               </span>
-            </div>
-            <div className="flex items-center space-x-1 sm:space-x-2">
+            </a>
+
+            {/* Phone 2 */}
+            <a
+              href="tel:+919810584326"
+              className="flex items-center space-x-1 sm:space-x-2 hover:opacity-80 transition"
+            >
               <Phone
                 size={14}
                 className="text-white sm:w-4 sm:h-4 flex-shrink-0"
@@ -98,7 +107,7 @@ const Navbar = () => {
               <span className="text-white font-semibold text-xs sm:text-sm lg:text-base whitespace-nowrap">
                 +91 - 98 105 84 326
               </span>
-            </div>
+            </a>
           </div>
         </div>
       </div>
