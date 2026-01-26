@@ -238,10 +238,10 @@ const Home = () => {
       </section>
 
       {/* Our Gallery Section */}
-      <SimpleGallery
+      {/* <SimpleGallery
         googlePhotosUrl="https://photos.app.goo.gl/PoSYcjGjWuqL4eY56"
         className=""
-      />
+      /> */}
 
       {/* CTA Section */}
       <section className="py-12 sm:py-16 lg:py-20 bg-gradient-hero text-white relative">
