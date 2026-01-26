@@ -3,15 +3,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import {
-  Calendar,
-  User,
-  ArrowRight,
-  Clock,
-  Tag,
-  Plus,
-  X,
-} from "lucide-react";
+import { Calendar, User, ArrowRight, Clock, Tag, Plus, X } from "lucide-react";
 
 const categories = [
   "All Posts",
@@ -39,27 +31,30 @@ const initialPosts = [
   },
   {
     id: 2,
-    title: "How to Pack Fragile Items Safely",
+    title: "How to Choose Your Home According to Vastu Shastra",
     excerpt:
-      "Protecting your valuable and fragile items during a move requires special attention and proper packing techniques. Learn the best practices...",
+      "Moving to a new home marks a fresh beginning. This guide explains how Vastu Shastra can help you choose a house that brings peace, prosperity, and positive energy.",
     content:
-      "Packing fragile items safely is crucial to avoid damage during your move. Use sturdy boxes, bubble wrap, and packing paper. Wrap each item individually and fill empty spaces with cushioning material. Mark boxes as 'Fragile' and stack them carefully in the moving truck.",
-    author: "Packing Expert",
-    date: "March 10, 2024",
-    readTime: "7 min read",
-    category: "Packing Guide",
+      "Moving to a new home is more than shifting boxes; it is a transition into a new phase of life. This blog explains how Vastu Shastra helps you select a home that supports health, wealth, and happiness, along with practical tips for entrances, kitchens, bedrooms, and moving day rituals.",
+    author: "Kalra Team",
+    date: "March 20, 2024",
+    readTime: "6 min read",
+    category: "Vastu & Moving Tips",
+    featured: false,
   },
   {
     id: 3,
-    title: "Office Relocation Checklist: Complete Guide",
+    title:
+      "How to Place Items According to Vastu: The Art of Positive Arrangement",
     excerpt:
-      "Planning an office move? Our comprehensive checklist ensures nothing is forgotten and your business operations continue smoothly...",
+      "Unpacking randomly can disturb energy flow. Learn how correct furniture and item placement according to Vastu Shastra can improve health, sleep, and harmony in your new home.",
     content:
-      "An office relocation requires careful planning. Start by assigning a move coordinator, informing employees, and creating a timeline. Inventory all equipment, update your address, and hire professional movers. Communicate with clients about the move and ensure IT systems are set up at the new location.",
-    author: "Business Solutions",
-    date: "March 5, 2024",
-    readTime: "10 min read",
-    category: "Business Moving",
+      "After moving into a new home, correct placement of furniture and household items is crucial. This guide explains room-by-room Vastu principles for living rooms, bedrooms, kitchens, and handling negative items to maintain positive energy.",
+    author: "Kalra Team",
+    date: "March 22, 2024",
+    readTime: "6 min read",
+    category: "Vastu & Moving Tips",
+    featured: false,
   },
   {
     id: 4,
@@ -162,8 +157,9 @@ const Blog = () => {
           <motion.div {...fadeInUp}>
             <h1 className="text-5xl font-bold mb-6">Moving Blog</h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-              Expert advice, tips, and insights to make your moving experience smooth and stress-free.
-              Learn from the professionals who know moving best.
+              Expert advice, tips, and insights to make your moving experience
+              smooth and stress-free. Learn from the professionals who know
+              moving best.
             </p>
           </motion.div>
         </div>
@@ -176,7 +172,9 @@ const Blog = () => {
             <motion.div {...fadeInUp} className="lg:col-span-1">
               <Card className="bg-[#f1f2f6] mb-8">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-foreground">Categories</h3>
+                  <h3 className="text-xl font-bold mb-4 text-foreground">
+                    Categories
+                  </h3>
                   <div className="space-y-2">
                     {categories.map((category) => (
                       <button
@@ -197,9 +195,12 @@ const Blog = () => {
 
               <Card className="bg-[#f1f2f6]">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-foreground">Subscribe</h3>
+                  <h3 className="text-xl font-bold mb-4 text-foreground">
+                    Subscribe
+                  </h3>
                   <p className="text-muted-foreground mb-4">
-                    Get the latest moving tips and updates delivered to your inbox.
+                    Get the latest moving tips and updates delivered to your
+                    inbox.
                   </p>
                   <div className="space-y-3">
                     <input
@@ -235,8 +236,12 @@ const Blog = () => {
                             <Tag className="h-4 w-4" />
                             <span className="text-sm">Featured Post</span>
                           </div>
-                          <h2 className="text-3xl font-bold mb-4">{post.title}</h2>
-                          <p className="text-blue-100 mb-4 leading-relaxed">{post.excerpt}</p>
+                          <h2 className="text-3xl font-bold mb-4">
+                            {post.title}
+                          </h2>
+                          <p className="text-blue-100 mb-4 leading-relaxed">
+                            {post.excerpt}
+                          </p>
                           <div className="flex items-center space-x-6 text-sm text-blue-100">
                             <div className="flex items-center space-x-2">
                               <User className="h-4 w-4" />
@@ -298,7 +303,10 @@ const Blog = () => {
                             </div>
                           </div>
                           <Link to={`/blog/${post.id}`}>
-                            <Button variant="ghost" className="p-0 h-auto font-medium text-primary hover:text-white group">
+                            <Button
+                              variant="ghost"
+                              className="p-0 h-auto font-medium text-primary hover:text-white group"
+                            >
                               Read More
                               <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                             </Button>
@@ -319,7 +327,8 @@ const Blog = () => {
           <motion.div {...fadeInUp}>
             <h2 className="text-4xl font-bold mb-6">Stay Updated</h2>
             <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
-              Subscribe to our newsletter for the latest moving tips, industry insights, and special offers.
+              Subscribe to our newsletter for the latest moving tips, industry
+              insights, and special offers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
               <input
@@ -350,14 +359,18 @@ const Blog = () => {
             >
               <X className="h-6 w-6" />
             </button>
-            <h2 className="text-2xl font-bold mb-6 text-foreground">Add New Blog Post</h2>
+            <h2 className="text-2xl font-bold mb-6 text-foreground">
+              Add New Blog Post
+            </h2>
             <form onSubmit={handleAddBlog} className="space-y-4">
               <input
                 type="text"
                 placeholder="Title"
                 className="w-full p-3 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                 value={newPost.title}
-                onChange={(e) => setNewPost((prev) => ({ ...prev, title: e.target.value }))}
+                onChange={(e) =>
+                  setNewPost((prev) => ({ ...prev, title: e.target.value }))
+                }
                 required
               />
               <textarea
@@ -365,7 +378,9 @@ const Blog = () => {
                 className="w-full p-3 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                 rows={4}
                 value={newPost.content}
-                onChange={(e) => setNewPost((prev) => ({ ...prev, content: e.target.value }))}
+                onChange={(e) =>
+                  setNewPost((prev) => ({ ...prev, content: e.target.value }))
+                }
                 required
               />
               <input
@@ -373,13 +388,17 @@ const Blog = () => {
                 placeholder="Author"
                 className="w-full p-3 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                 value={newPost.author}
-                onChange={(e) => setNewPost((prev) => ({ ...prev, author: e.target.value }))}
+                onChange={(e) =>
+                  setNewPost((prev) => ({ ...prev, author: e.target.value }))
+                }
                 required
               />
               <select
                 className="w-full p-3 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                 value={newPost.category}
-                onChange={(e) => setNewPost((prev) => ({ ...prev, category: e.target.value }))}
+                onChange={(e) =>
+                  setNewPost((prev) => ({ ...prev, category: e.target.value }))
+                }
               >
                 {categories.slice(1).map((cat) => (
                   <option key={cat} value={cat}>
