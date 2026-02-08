@@ -60,50 +60,54 @@ const initialPosts = [
     id: 4,
     title: "Understanding Moving Insurance: What You Need to Know",
     excerpt:
-      "Protect your belongings during the move with the right insurance coverage. Learn about different types of coverage and what's included...",
+      "Protecting your belongings during a move is crucial. Learn about the types of moving insurance, what they cover, and how to choose the right plan for a stress-free relocation.",
     content:
-      "Moving insurance provides peace of mind during your relocation. There are different types: basic carrier liability, declared value protection, and full value protection. Review your policy, understand what’s covered, and consider purchasing additional coverage for valuable items.",
-    author: "Insurance Advisor",
-    date: "February 28, 2024",
+      "Moving insurance safeguards your items from damage, loss, or theft during relocation. This blog explains basic liability, full value protection, third-party insurance, storage-in-transit coverage, and tips for filing claims, helping you make an informed choice.",
+    author: "Kalra Team",
+    date: "March 25, 2024",
     readTime: "6 min read",
-    category: "Insurance",
+    category: "Moving Tips & Insurance",
+    featured: false,
   },
   {
     id: 5,
-    title: "Seasonal Moving: Best Times to Relocate",
+    title: "Seasonal Moving: Choosing the Best Time to Move",
     excerpt:
-      "Timing your move can significantly impact cost and convenience. Discover the best seasons for moving and how to plan accordingly...",
+      "Timing your move can affect cost, comfort, and safety. Learn how seasons impact relocation, and get tips for smooth summer, monsoon, and winter moves.",
     content:
-      "The best time to move is typically during the off-peak seasons, such as fall or winter, when moving companies offer lower rates and greater availability. Avoid summer and month-end dates if possible. Plan ahead and book your movers early for the best experience.",
-    author: "Moving Consultant",
-    date: "February 20, 2024",
-    readTime: "4 min read",
-    category: "Planning",
+      "Seasonal factors such as weather, school calendars, and demand affect moving day safety, costs, and convenience. This blog explains how to plan your move during summer, monsoon, and winter for a smooth and stress-free experience.",
+    author: "Kalra Team",
+    date: "March 28, 2024",
+    readTime: "5 min read",
+    category: "Moving Tips",
+    featured: false,
   },
   {
     id: 6,
-    title: "International Moving: A Complete Guide",
+    title: "International Moving: A Complete Guide for Stress-Free Relocation",
     excerpt:
-      "Moving abroad involves unique challenges and requirements. Our guide covers everything from documentation to customs clearance...",
+      "Moving abroad involves complex logistics, customs, and documentation. Learn how to prepare, pack, and protect your belongings for a smooth international relocation.",
     content:
-      "International moving requires careful planning. Research visa requirements, customs regulations, and shipping options. Hire a reputable international mover, prepare your documents, and create an inventory of your belongings. Consider insurance and plan for arrival logistics.",
-    author: "International Team",
-    date: "February 15, 2024",
-    readTime: "12 min read",
-    category: "International",
+      "International moving requires careful planning, from documentation and customs clearance to packing and insurance. This guide explains the steps to prepare, downsize, pack, and insure your items for a stress-free international move with Kalra Packers & Movers.",
+    author: "Kalra Team",
+    date: "March 30, 2024",
+    readTime: "6 min read",
+    category: "Moving Tips",
+    featured: false,
   },
   // New Moving Tips Blog Post Example
   {
     id: 7,
-    title: "Moving Tips: How to Organize Your Move Efficiently",
+    title: "Master Moving Timeline & Packing Tips for a Stress-Free Move",
     excerpt:
-      "Organization is key to a successful move. Start by creating a checklist, labeling boxes, and scheduling tasks ahead of time. These simple steps can save you time and reduce stress...",
+      "Organize your move efficiently with a structured timeline, room-by-room packing strategy, and budget-smart hacks to reduce stress and save time.",
     content:
-      "To organize your move efficiently, begin by drafting a detailed checklist of all tasks. Label boxes by room and contents, and schedule tasks such as packing, cleaning, and utility transfers ahead of time. Use color-coded labels for quick identification. Keep important documents and valuables in a separate, easily accessible box. Regularly review your checklist to stay on track and adjust as needed. These steps will help you save time and minimize stress throughout your move.",
-    author: "Swift Shift Team",
-    date: "April 2, 2024",
+      "This blog guides you through an 8-week master moving timeline, room-by-room packing strategy, essential moving day checklist, budget-smart packing hacks, and post-move unpacking plan to ensure a smooth relocation with Kalra Packers & Movers.",
+    author: "Kalra Team",
+    date: "April 1, 2024",
     readTime: "6 min read",
     category: "Moving Tips",
+    featured: false,
   },
 ];
 

@@ -164,43 +164,189 @@ A home arranged according to Vastu feels calm, balanced, and welcoming. Simple p
   {
     id: "4",
     title: "Understanding Moving Insurance: What You Need to Know",
-    content: `Protect your belongings during the move with the right insurance coverage. Learn about different types of coverage and what's included:
+    content: `Moving to a new home is exciting, but protecting your belongings during transit is equally important. At Kalra Packers & Movers, understanding moving insurance is key to a safe, stress-free relocation.
 
-- Basic carrier liability
-- Full value protection
-- Third-party insurance options
-- How to file a claim if needed.`,
-    author: "Insurance Advisor",
-    date: "February 28, 2024",
+1. What is Moving Insurance?  
+Moving insurance is coverage that protects your items from damage, loss, or theft during transit. Standard home insurance often does not cover items in transit. Moving insurance acts as a safety net, ensuring the moving company is accountable and reimburses you if something goes wrong.
+
+2. Types of Moving Insurance Coverage  
+
+- Basic Carrier Liability (Released Value Protection):  
+Minimal coverage, usually provided at no extra cost. Compensation is often around ₹0.60 per pound per item, regardless of actual value.
+
+- Full Value Protection (FVP):  
+Comprehensive coverage where the mover is responsible for repair, replacement, or cash equivalent of damaged or lost items. Costs typically 1-2% of total belongings value.
+
+- Third-Party Moving Insurance:  
+Purchased from independent insurers, covers more perils, including natural disasters. Ideal for high-value or antique items. Premiums range from 1-5% of declared value.
+
+- Storage-in-Transit Insurance:  
+Covers belongings temporarily stored before reaching the destination, protecting against damage or theft during storage.
+
+3. What Moving Insurance Covers (and Doesn’t Cover)  
+Typically covers: accidental damage during transit, theft, fire, some weather events, and losses handled by movers.  
+Exclusions: normal wear and tear, damage to poorly packed items, mysterious disappearance, unlisted inventory items, and fragile items without special packing.
+
+4. Choosing the Right Coverage  
+
+Factor              	Consideration  
+Coverage Limits	    Ensure limits meet or exceed the total value of belongings  
+High-Value Items	    Declare fragile or expensive items for special coverage  
+Policy Details	    Compare exclusions, coverage, and premiums  
+Timing	            Purchase insurance before moving; post-move policies are rare
+
+5. Filing a Claim: What to Expect  
+Document all damage with photos and notes. Notify Kalra Packers & Movers and your insurer promptly. Complete claim forms with inventory lists and proof of value. The insurer will assess and provide compensation via repair, replacement, or payment.
+
+6. Why Choose Moving Insurance with Kalra Packers & Movers?  
+Moving insurance protects items of monetary and sentimental value. Whether local or interstate, insurance ensures financial safety against unexpected damage or loss. Without it, replacing valuable items falls entirely on you.
+
+7. Make an Informed Decision  
+Research policies, read exclusions, and confirm coverage requirements like professional packing. Our team can guide you to the best coverage for your move, ensuring peace of mind and a stress-free relocation.`,
+    author: "Kalra Team",
+    date: "March 25, 2024",
     readTime: "6 min read",
-    category: "Insurance",
+    category: "Moving Tips & Insurance",
   },
   {
     id: "5",
-    title: "Seasonal Moving: Best Times to Relocate",
-    content: `Timing your move can significantly impact cost and convenience. Discover the best seasons for moving and how to plan accordingly:
+    title: "Seasonal Moving: Choosing the Best Time to Move",
+    content: `Seasonal moving matters because weather, traffic, school calendars, and demand can all affect your budget, timeline, and comfort on moving day. For Kalra Packers & Movers customers, choosing the right season can make packing safer, transit smoother, and delivery more predictable.
 
-- Spring and fall are ideal for mild weather.
-- Summer is busiest but convenient for families.
-- Winter moves may be cheaper but require extra precautions.`,
-    author: "Moving Consultant",
-    date: "February 20, 2024",
-    readTime: "4 min read",
-    category: "Planning",
+1. Why Timing Changes Everything  
+Peak moving periods mean higher demand for vehicles and labour, which can impact scheduling and costs. Off-peak times offer more flexibility in dates and services. Weather directly affects carton safety, furniture handling, and loading/unloading times, especially for long-distance moves.
+
+2. Summer Moves (April–June)  
+Summer is popular due to school schedules and job transitions.  
+- Upside: Clear roads, fewer weather delays  
+- Downside: Heat stress for crews, higher demand  
+- Tip: Book early and plan morning loading for smoother transit
+
+3. Monsoon Moves (July–September)  
+Monsoon can offer better date availability but requires extra care for moisture-sensitive items.  
+- Protect mattresses, sofas, and electronics  
+- Use waterproof wrapping, sealed cartons, and covered loading to prevent dampness
+
+4. Winter & Festive Season Moves (October–February)  
+Winter offers milder temperatures, easier handling, and comfort for families and elderly.  
+- Be aware of mini “rush” weeks during festivals and year-end office moves  
+- Confirm route planning, parking, and society permissions in advance
+
+5. Picking Your Best Time  
+Choose the season based on priorities:  
+- Speed & predictability: Summer or winter  
+- Flexibility: Monsoon  
+- Minimal family disruption: School/festival planning
+
+6. Quick Checklist for Seasonal Moves  
+- Book your preferred date early, especially weekends and month-end  
+- Plan morning loading to avoid traffic delays  
+- Keep rain covers/extra wrapping ready for monsoon moves  
+- Reserve lifts/parking and confirm society permissions 2–3 days prior  
+- Carry valuables/documents personally and label essentials for first-day unpacking
+
+Conclusion  
+Planning your move according to the season ensures smoother, safer, and more predictable relocation. With Kalra Packers & Movers, careful preparation and seasonal awareness guarantee your belongings reach your new home securely and stress-free.`,
+    author: "Kalra Team",
+    date: "March 28, 2024",
+    readTime: "5 min read",
+    category: "Moving Tips",
   },
   {
     id: "6",
-    title: "International Moving: A Complete Guide",
-    content: `Moving abroad involves unique challenges and requirements. Our guide covers everything from documentation to customs clearance:
+    title: "International Moving: A Complete Guide for Stress-Free Relocation",
+    content: `International moving is a major life transition that requires more than just packing boxes. It involves customs regulations, complex logistics, and precise documentation. For Kalra Packers & Movers clients, early planning and understanding international moving requirements ensures a smooth relocation.
 
-- Research destination regulations.
-- Prepare necessary documents.
-- Choose international movers.
-- Plan for customs and shipping timelines.`,
-    author: "International Team",
-    date: "February 15, 2024",
-    readTime: "12 min read",
-    category: "International",
+1. Documentation & Legal Requirements  
+Before packing, secure all necessary paperwork for customs clearance. Every country has specific entry requirements.
+
+Essential Documents:  
+Passports, visas, work permits, birth/marriage certificates, medical records.
+
+Customs Paperwork:  
+Prepare a detailed packing list and value declaration for all shipped items. Some countries require permits for items like alcohol or plant-based products.
+
+Pet & Vehicle Permits:  
+If moving with pets or vehicles, check vaccination and import regulations months in advance.
+
+2. Sorting & Downsizing (The "Ship vs. Store" Decision)  
+Shipping costs depend on volume or weight. Reduce load to save money using the "3-pile rule": Keep, Store, Sell/Donate.
+
+Electrical Compatibility:  
+Verify appliances will work in the destination country (voltage differences may prevent shipping some items).
+
+Prohibited Items:  
+Research restricted items at your destination, such as certain foods, seeds, or medications.
+
+3. The Packing Process  
+International transit involves multiple handling stages. Export-grade packing is essential.
+
+Professional Packing:  
+Kalra Packers & Movers uses industrial-strength wrapping, bubble wrap, and crating for fragile items to survive long sea or air transit.
+
+Labeling:  
+Number each box and list it on the inventory sheet. Avoid vague labels like "Miscellaneous" to prevent customs delays.
+
+4. Timeline for a Smooth Move  
+
+Timeframe	        Key Actions  
+8-12 Weeks Out	    Research destination laws, sort belongings, book move dates  
+4-6 Weeks Out	    Finalize visas, notify banks, get medical records, pack non-essentials  
+1-2 Weeks Out	    Confirm details with Kalra Packers, dispose hazardous materials, pack "first-day" luggage  
+Moving Day	        Supervise inventory creation and keep personal travel documents with you
+
+5. Insurance: Don’t Move Without It  
+International shipments face higher risks due to distance and multiple handling points. Marine transit insurance is essential to protect against loss, damage, or General Average. Ensure your policy covers door-to-door replacement value.
+
+Conclusion  
+Moving abroad can be complex, but with Kalra Packers & Movers handling customs forms, export packing, and logistics, you can focus on starting your new adventure without worrying about your belongings.`,
+    author: "Kalra Team",
+    date: "March 30, 2024",
+    readTime: "6 min read",
+    category: "Moving Tips",
+  },
+  {
+    id: "7",
+    title: "Master Moving Timeline & Packing Tips for a Stress-Free Move",
+    content: `Moving to a new home can feel overwhelming, but with smart organization, it becomes manageable, saving time, reducing stress, and cutting costs. Kalra Packers & Movers recommends starting early and following a structured plan.
+
+1. Create a Master Moving Timeline  
+Break your move into phases with clear deadlines. A typical 8-week plan works for most households:
+
+Weeks 8-6: Declutter ruthlessly—sort items into keep, donate, sell, or trash. Book Kalra Packers & Movers and confirm dates.  
+Weeks 5-3: Gather supplies (boxes, tape, markers) and pack non-essentials like books, off-season clothes, decor.  
+Weeks 2-1: Pack daily-use items last, label boxes clearly, and arrange utilities transfer.  
+Moving Week: Final clean, supervise loading, and unpack essentials first.
+
+2. Room-by-Room Packing Strategy  
+Tackle one room at a time and color-code boxes by room for easy inventory.
+
+Room | Priority Packing Order | Pro Tips  
+Kitchen | Fragile glassware first, then utensils | Wrap dishes in clothing; pack liquids separately  
+Bedroom | Off-season clothes, then linens | Disassemble bed frames early; use pillows to protect breakables  
+Living Room | Books/decor first, electronics last | Use original boxes for TVs; secure mirrors with cardboard  
+Bathroom | Toiletries in Ziplocs | Empty aerosols; pack a "first-night" essentials kit
+
+3. Essential Moving Day Checklist  
+- Confirm Kalra Packers arrival time and access (parking, elevator)  
+- Have cash ready for tips, water/snacks for the crew, and a dolly for heavy items  
+- Walk through with the team to verify inventory before sealing the truck  
+- Travel light with valuables, documents, jewelry, and one change of clothes
+
+4. Budget-Smart Packing Hacks  
+- Use suitcases, towels, and laundry baskets for packing to save costs  
+- Photograph valuables for insurance purposes  
+- Disassemble furniture and keep hardware in labeled bags attached to pieces  
+- Create an "Open First" box: toilet paper, chargers, coffee maker, sheets, snacks
+
+5. Post-Move Unpacking Plan  
+Reverse the packing process for quick settling in. Focus on sleep and kitchen first to feel at home fast.
+
+With Kalra Packers & Movers handling heavy lifting and transport, following this organized prep ensures a seamless move. Contact us today to customize this plan for local or international relocations.`,
+    author: "Kalra Team",
+    date: "April 1, 2024",
+    readTime: "6 min read",
+    category: "Moving Tips",
   },
 ];
 
